@@ -10,7 +10,7 @@
 
     // Application State
     const AppState = {
-        currentPage: 'dashboard',
+        currentPage: 'home',
         stats: {
             productStories: 0,
             battleCards: 0,
@@ -141,6 +141,7 @@
 
         // Update page title
         const titles = {
+            'home': 'Home',
             'dashboard': 'Dashboard',
             'product-understanding': 'Product Understanding',
             'positioning': 'Positioning Engine',

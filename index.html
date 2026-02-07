@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NarrativeOS™ — The operating system for product storytelling and go-to-market clarity. Powered by StoryGTM.">
+    <meta name="description"
+        content="NarrativeOS™ — The operating system for product storytelling and go-to-market clarity. Powered by StoryGTM.">
     <meta name="keywords" content="product marketing, GTM, go-to-market, storytelling, SaaS, positioning">
     <meta name="author" content="NarrativeOS">
-    
+
     <!-- Security Headers (for reference - implement on server) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data: https:;">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data: https:;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
-    
+
     <title>NarrativeOS™ — Product Storytelling Platform</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- App Container -->
     <div id="app" class="app-container">
-        
+
         <!-- Sidebar Navigation -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="logo">
                     <div class="logo-icon">
                         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="10" fill="url(#logo-gradient)"/>
-                            <path d="M12 14L20 10L28 14V26L20 30L12 26V14Z" stroke="white" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="4" fill="white"/>
+                            <rect width="40" height="40" rx="10" fill="url(#logo-gradient)" />
+                            <path d="M12 14L20 10L28 14V26L20 30L12 26V14Z" stroke="white" stroke-width="2"
+                                fill="none" />
+                            <circle cx="20" cy="20" r="4" fill="white" />
                             <defs>
                                 <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40">
-                                    <stop offset="0%" stop-color="#6366f1"/>
-                                    <stop offset="100%" stop-color="#8b5cf6"/>
+                                    <stop offset="0%" stop-color="#6366f1" />
+                                    <stop offset="100%" stop-color="#8b5cf6" />
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -49,95 +56,103 @@
                     </div>
                 </div>
             </div>
-            
+
             <nav class="sidebar-nav">
                 <div class="nav-section">
                     <span class="nav-section-title">Overview</span>
-                    <a href="#dashboard" class="nav-item active" data-page="dashboard">
+                    <a href="#home" class="nav-item active" data-page="home">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="7" height="7" rx="1"/>
-                            <rect x="14" y="3" width="7" height="7" rx="1"/>
-                            <rect x="3" y="14" width="7" height="7" rx="1"/>
-                            <rect x="14" y="14" width="7" height="7" rx="1"/>
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="#dashboard" class="nav-item" data-page="dashboard">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7" rx="1" />
+                            <rect x="14" y="3" width="7" height="7" rx="1" />
+                            <rect x="3" y="14" width="7" height="7" rx="1" />
+                            <rect x="14" y="14" width="7" height="7" rx="1" />
                         </svg>
                         <span>Dashboard</span>
                     </a>
                 </div>
-                
+
                 <div class="nav-section">
                     <span class="nav-section-title">NarrativeOS Core</span>
                     <a href="#product-understanding" class="nav-item" data-page="product-understanding">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4M12 8h.01" />
                         </svg>
                         <span>Product Understanding</span>
                     </a>
                     <a href="#positioning" class="nav-item" data-page="positioning">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                         </svg>
                         <span>Positioning Engine</span>
                     </a>
                     <a href="#story-architecture" class="nav-item" data-page="story-architecture">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                         </svg>
                         <span>Story Architecture</span>
                     </a>
                     <a href="#creative-hooks" class="nav-item" data-page="creative-hooks">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                         </svg>
                         <span>Creative Hooks</span>
                     </a>
                 </div>
-                
+
                 <div class="nav-section">
                     <span class="nav-section-title">StoryGTM</span>
                     <a href="#gtm-launch" class="nav-item" data-page="gtm-launch">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                         </svg>
                         <span>Launch Planning</span>
                     </a>
                     <a href="#battle-cards" class="nav-item" data-page="battle-cards">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-                            <polyline points="14 2 14 8 20 8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
                         </svg>
                         <span>Battle Cards</span>
                     </a>
                     <a href="#win-loss" class="nav-item" data-page="win-loss">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="20" x2="18" y2="10"/>
-                            <line x1="12" y1="20" x2="12" y2="4"/>
-                            <line x1="6" y1="20" x2="6" y2="14"/>
+                            <line x1="18" y1="20" x2="18" y2="10" />
+                            <line x1="12" y1="20" x2="12" y2="4" />
+                            <line x1="6" y1="20" x2="6" y2="14" />
                         </svg>
                         <span>Win/Loss Analysis</span>
                     </a>
                     <a href="#market-segments" class="nav-item" data-page="market-segments">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg>
                         <span>Market Segments</span>
                     </a>
                     <a href="#roadmap-story" class="nav-item" data-page="roadmap-story">
                         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12 6 12 12 16 14"/>
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
                         </svg>
                         <span>Roadmap Stories</span>
                     </a>
                 </div>
             </nav>
-            
+
             <div class="sidebar-footer">
                 <div class="powered-by">
                     <span class="powered-label">powered by</span>
@@ -145,7 +160,7 @@
                 </div>
             </div>
         </aside>
-        
+
         <!-- Main Content Area -->
         <main class="main-content" id="main-content">
             <!-- Top Header Bar -->
@@ -153,9 +168,9 @@
                 <div class="header-left">
                     <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="3" y1="12" x2="21" y2="12"/>
-                            <line x1="3" y1="6" x2="21" y2="6"/>
-                            <line x1="3" y1="18" x2="21" y2="18"/>
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
                         </svg>
                     </button>
                     <h1 class="page-title" id="page-title">Dashboard</h1>
@@ -163,8 +178,8 @@
                 <div class="header-right">
                     <div class="search-container">
                         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"/>
-                            <path d="M21 21l-4.35-4.35"/>
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
                         </svg>
                         <input type="text" class="search-input" placeholder="Search..." id="search-input">
                     </div>
@@ -175,11 +190,53 @@
                     </div>
                 </div>
             </header>
-            
+
             <!-- Page Content Container -->
             <div class="page-container" id="page-container">
+                <!-- Home Page -->
+                <div class="page active" id="page-home">
+                    <div class="hero-banner-container">
+                        <img src="./docs/img/hero_banner.png" alt="NarrativeOS Hero Banner" class="hero-banner-img">
+                        <div class="hero-banner-overlay">
+                            <h3>The Operating System for Product Storytelling</h3>
+                            <button class="btn btn-primary" onclick="navigateTo('dashboard')">Launch Dashboard</button>
+                        </div>
+                    </div>
+
+                    <div class="premium-content-grid">
+                        <div class="content-section">
+                            <div class="section-badge">Narrative Intelligence</div>
+                            <h2>Turn complex products into stories that win.</h2>
+                            <p>NarrativeOS™ extracts the "why" behind your product. Convert technical features into
+                                customer-centric outcomes using Jobs-to-be-Done (JTBD) frameworks and value mapping.</p>
+                        </div>
+
+                        <div class="content-section">
+                            <div class="section-badge">GTM Orchestration</div>
+                            <h2>Launch with narrative-led sequencing.</h2>
+                            <p>Plan launches from Alpha to GA. Ensure every channel—from website to social—speaks with
+                                one coherent voice powered by StoryGTM.</p>
+                        </div>
+
+                        <div class="content-section">
+                            <div class="section-badge">Sales Enablement</div>
+                            <h2>Equip teams to handle any objection.</h2>
+                            <p>Generate dynamic battle cards and win/loss insights that keep your sales force ahead of
+                                the competition.</p>
+                        </div>
+                    </div>
+
+                    <div class="cta-block">
+                        <h3>Ready to reclaim your product narrative?</h3>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-lg" onclick="navigateTo('product-understanding')">Start
+                                Your Analysis</button>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Dashboard Page -->
-                <div class="page active" id="page-dashboard">
+                <div class="page" id="page-dashboard">
                     <div class="dashboard-hero">
                         <div class="hero-content">
                             <h2 class="hero-title">
@@ -187,14 +244,14 @@
                                 <br>into stories that win markets.
                             </h2>
                             <p class="hero-subtitle">
-                                NarrativeOS™ transforms your product complexity into compelling narratives 
+                                NarrativeOS™ transforms your product complexity into compelling narratives
                                 that resonate with buyers at every stage.
                             </p>
                             <div class="hero-actions">
                                 <button class="btn btn-primary" onclick="navigateTo('product-understanding')">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <path d="M12 16v-4M12 8h.01"/>
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 16v-4M12 8h.01" />
                                     </svg>
                                     Start Product Analysis
                                 </button>
@@ -222,14 +279,14 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Quick Stats -->
                     <div class="stats-grid">
                         <div class="stat-card">
                             <div class="stat-icon purple">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                                 </svg>
                             </div>
                             <div class="stat-info">
@@ -240,8 +297,8 @@
                         <div class="stat-card">
                             <div class="stat-icon blue">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                    <polyline points="14 2 14 8 20 8" />
                                 </svg>
                             </div>
                             <div class="stat-info">
@@ -252,7 +309,7 @@
                         <div class="stat-card">
                             <div class="stat-icon green">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                                 </svg>
                             </div>
                             <div class="stat-info">
@@ -263,7 +320,7 @@
                         <div class="stat-card">
                             <div class="stat-icon orange">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                 </svg>
                             </div>
                             <div class="stat-info">
@@ -272,7 +329,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Module Cards -->
                     <h3 class="section-title">Quick Access</h3>
                     <div class="module-grid">
@@ -280,93 +337,101 @@
                             <div class="module-header">
                                 <div class="module-icon purple">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <path d="M12 16v-4M12 8h.01"/>
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 16v-4M12 8h.01" />
                                     </svg>
                                 </div>
                                 <span class="module-badge">Core</span>
                             </div>
                             <h4 class="module-title">Product Understanding</h4>
-                            <p class="module-desc">Transform product complexity into value maps, JTBD analysis, and feature-benefit translations.</p>
+                            <p class="module-desc">Transform product complexity into value maps, JTBD analysis, and
+                                feature-benefit translations.</p>
                         </div>
-                        
+
                         <div class="module-card" onclick="navigateTo('positioning')">
                             <div class="module-header">
                                 <div class="module-icon indigo">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                        <path
+                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                                     </svg>
                                 </div>
                                 <span class="module-badge">Core</span>
                             </div>
                             <h4 class="module-title">Positioning Engine</h4>
-                            <p class="module-desc">Generate positioning statements, differentiation matrices, and competitive advantages.</p>
+                            <p class="module-desc">Generate positioning statements, differentiation matrices, and
+                                competitive advantages.</p>
                         </div>
-                        
+
                         <div class="module-card" onclick="navigateTo('creative-hooks')">
                             <div class="module-header">
                                 <div class="module-icon yellow">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                                     </svg>
                                 </div>
                                 <span class="module-badge">Core</span>
                             </div>
                             <h4 class="module-title">Creative Hooks</h4>
-                            <p class="module-desc">Generate 3-5 magnetic narrative hooks with emotional triggers and logical anchors.</p>
+                            <p class="module-desc">Generate 3-5 magnetic narrative hooks with emotional triggers and
+                                logical anchors.</p>
                         </div>
-                        
+
                         <div class="module-card" onclick="navigateTo('battle-cards')">
                             <div class="module-header">
                                 <div class="module-icon red">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-                                        <polyline points="14 2 14 8 20 8"/>
+                                        <path
+                                            d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                        <polyline points="14 2 14 8 20 8" />
                                     </svg>
                                 </div>
                                 <span class="module-badge gtm">StoryGTM</span>
                             </div>
                             <h4 class="module-title">Battle Cards</h4>
-                            <p class="module-desc">Create dynamic competitive battle cards with objection handling and talk tracks.</p>
+                            <p class="module-desc">Create dynamic competitive battle cards with objection handling and
+                                talk tracks.</p>
                         </div>
-                        
+
                         <div class="module-card" onclick="navigateTo('win-loss')">
                             <div class="module-header">
                                 <div class="module-icon green">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <line x1="18" y1="20" x2="18" y2="10"/>
-                                        <line x1="12" y1="20" x2="12" y2="4"/>
-                                        <line x1="6" y1="20" x2="6" y2="14"/>
+                                        <line x1="18" y1="20" x2="18" y2="10" />
+                                        <line x1="12" y1="20" x2="12" y2="4" />
+                                        <line x1="6" y1="20" x2="6" y2="14" />
                                     </svg>
                                 </div>
                                 <span class="module-badge gtm">StoryGTM</span>
                             </div>
                             <h4 class="module-title">Win/Loss Analysis</h4>
-                            <p class="module-desc">Analyze deal patterns, identify gaps, and generate actionable insights.</p>
+                            <p class="module-desc">Analyze deal patterns, identify gaps, and generate actionable
+                                insights.</p>
                         </div>
-                        
+
                         <div class="module-card" onclick="navigateTo('gtm-launch')">
                             <div class="module-header">
                                 <div class="module-icon blue">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg>
                                 </div>
                                 <span class="module-badge gtm">StoryGTM</span>
                             </div>
                             <h4 class="module-title">Launch Planning</h4>
-                            <p class="module-desc">Plan GTM strategies, launch sequences, and funnel-aware messaging.</p>
+                            <p class="module-desc">Plan GTM strategies, launch sequences, and funnel-aware messaging.
+                            </p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product Understanding Page -->
                 <div class="page" id="page-product-understanding">
                     <div class="page-header">
                         <h2>Product Understanding Engine</h2>
                         <p>Transform your product details into actionable value maps and insights.</p>
                     </div>
-                    
+
                     <div class="content-grid">
                         <div class="input-panel">
                             <div class="panel-card">
@@ -378,37 +443,41 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="product-category">Category / Industry</label>
-                                        <input type="text" id="product-category" placeholder="e.g., Enterprise Data Integration">
+                                        <input type="text" id="product-category"
+                                            placeholder="e.g., Enterprise Data Integration">
                                     </div>
                                     <div class="form-group">
                                         <label for="product-description">Product Description</label>
-                                        <textarea id="product-description" rows="4" placeholder="Describe what your product does, its core capabilities, and technical details..."></textarea>
+                                        <textarea id="product-description" rows="4"
+                                            placeholder="Describe what your product does, its core capabilities, and technical details..."></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="target-audience">Target Audience</label>
-                                        <textarea id="target-audience" rows="3" placeholder="Who uses this product? What roles, industries, company sizes?"></textarea>
+                                        <textarea id="target-audience" rows="3"
+                                            placeholder="Who uses this product? What roles, industries, company sizes?"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="key-features">Key Features (one per line)</label>
-                                        <textarea id="key-features" rows="4" placeholder="Real-time sync&#10;API-first architecture&#10;Enterprise SSO&#10;99.9% uptime SLA"></textarea>
+                                        <textarea id="key-features" rows="4"
+                                            placeholder="Real-time sync&#10;API-first architecture&#10;Enterprise SSO&#10;99.9% uptime SLA"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-full">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                                         </svg>
                                         Analyze Product
                                     </button>
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="output-panel">
                             <div class="panel-card output-card" id="product-output">
                                 <div class="empty-state">
                                     <div class="empty-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <circle cx="12" cy="12" r="10"/>
-                                            <path d="M12 16v-4M12 8h.01"/>
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="M12 16v-4M12 8h.01" />
                                         </svg>
                                     </div>
                                     <h4>Ready to Analyze</h4>
@@ -424,14 +493,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Positioning Engine Page -->
                 <div class="page" id="page-positioning">
                     <div class="page-header">
                         <h2>Positioning & Differentiation Engine</h2>
                         <p>Generate powerful positioning statements and competitive differentiation.</p>
                     </div>
-                    
+
                     <div class="content-grid">
                         <div class="input-panel">
                             <div class="panel-card">
@@ -443,15 +512,18 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="pos-category">Market Category</label>
-                                        <input type="text" id="pos-category" placeholder="e.g., Product Marketing Platform">
+                                        <input type="text" id="pos-category"
+                                            placeholder="e.g., Product Marketing Platform">
                                     </div>
                                     <div class="form-group">
                                         <label for="pos-unique">Unique Differentiator</label>
-                                        <textarea id="pos-unique" rows="3" placeholder="What makes you fundamentally different from alternatives?"></textarea>
+                                        <textarea id="pos-unique" rows="3"
+                                            placeholder="What makes you fundamentally different from alternatives?"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="pos-competitors">Key Competitors (one per line)</label>
-                                        <textarea id="pos-competitors" rows="3" placeholder="Competitor A&#10;Competitor B&#10;Competitor C"></textarea>
+                                        <textarea id="pos-competitors" rows="3"
+                                            placeholder="Competitor A&#10;Competitor B&#10;Competitor C"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="pos-persona">Primary Buyer Persona</label>
@@ -470,13 +542,14 @@
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="output-panel">
                             <div class="panel-card output-card" id="positioning-output">
                                 <div class="empty-state">
                                     <div class="empty-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                            <path
+                                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                                         </svg>
                                     </div>
                                     <h4>Ready to Position</h4>
@@ -492,14 +565,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Story Architecture Page -->
                 <div class="page" id="page-story-architecture">
                     <div class="page-header">
                         <h2>Story Architecture Engine</h2>
                         <p>Build compelling product story frameworks and messaging hierarchies.</p>
                     </div>
-                    
+
                     <div class="content-grid single-column">
                         <div class="panel-card">
                             <h3 class="panel-title">Story Builder</h3>
@@ -521,28 +594,31 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="story-problem">The Problem (Before State)</label>
-                                    <textarea id="story-problem" rows="3" placeholder="What painful reality exists before your product?"></textarea>
+                                    <textarea id="story-problem" rows="3"
+                                        placeholder="What painful reality exists before your product?"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="story-solution">The Solution (Your Product)</label>
-                                    <textarea id="story-solution" rows="3" placeholder="How does your product change the game?"></textarea>
+                                    <textarea id="story-solution" rows="3"
+                                        placeholder="How does your product change the game?"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="story-outcome">The Outcome (After State)</label>
-                                    <textarea id="story-outcome" rows="3" placeholder="What does success look like with your product?"></textarea>
+                                    <textarea id="story-outcome" rows="3"
+                                        placeholder="What does success look like with your product?"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-full">
                                     Build Story Architecture
                                 </button>
                             </form>
                         </div>
-                        
+
                         <div class="panel-card output-card" id="story-output">
                             <div class="empty-state">
                                 <div class="empty-icon">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                                     </svg>
                                 </div>
                                 <h4>Ready to Architect</h4>
@@ -551,14 +627,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Creative Hooks Page -->
                 <div class="page" id="page-creative-hooks">
                     <div class="page-header">
                         <h2>Creative Hooks Generator</h2>
                         <p>Generate 3-5 magnetic narrative hooks that capture attention and drive action.</p>
                     </div>
-                    
+
                     <div class="content-grid">
                         <div class="input-panel">
                             <div class="panel-card">
@@ -566,7 +642,8 @@
                                 <form id="hooks-form" class="form">
                                     <div class="form-group">
                                         <label for="hooks-product">Product/Topic</label>
-                                        <input type="text" id="hooks-product" placeholder="e.g., AI-powered analytics" required>
+                                        <input type="text" id="hooks-product" placeholder="e.g., AI-powered analytics"
+                                            required>
                                     </div>
                                     <div class="form-group">
                                         <label for="hooks-audience">Target Audience</label>
@@ -584,7 +661,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="hooks-pain">Core Pain Point</label>
-                                        <textarea id="hooks-pain" rows="3" placeholder="What frustration or challenge does your product solve?"></textarea>
+                                        <textarea id="hooks-pain" rows="3"
+                                            placeholder="What frustration or challenge does your product solve?"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label>Hook Style</label>
@@ -609,20 +687,20 @@
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-full">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                                         </svg>
                                         Generate Hooks
                                     </button>
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="output-panel">
                             <div class="panel-card output-card" id="hooks-output">
                                 <div class="empty-state">
                                     <div class="empty-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                                         </svg>
                                     </div>
                                     <h4>Ready to Hook</h4>
@@ -638,14 +716,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Battle Cards Page -->
                 <div class="page" id="page-battle-cards">
                     <div class="page-header">
                         <h2>Competitive Battle Cards</h2>
                         <p>Generate dynamic battle cards with objection handling and talk tracks.</p>
                     </div>
-                    
+
                     <div class="content-grid">
                         <div class="input-panel">
                             <div class="panel-card">
@@ -661,19 +739,23 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="bc-category">Market Category</label>
-                                        <input type="text" id="bc-category" placeholder="e.g., Product Marketing Platform">
+                                        <input type="text" id="bc-category"
+                                            placeholder="e.g., Product Marketing Platform">
                                     </div>
                                     <div class="form-group">
                                         <label for="bc-strengths">Your Key Strengths</label>
-                                        <textarea id="bc-strengths" rows="3" placeholder="What are your 3-5 main competitive advantages?"></textarea>
+                                        <textarea id="bc-strengths" rows="3"
+                                            placeholder="What are your 3-5 main competitive advantages?"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="bc-weaknesses">Competitor Weaknesses</label>
-                                        <textarea id="bc-weaknesses" rows="3" placeholder="Known gaps or limitations of the competitor?"></textarea>
+                                        <textarea id="bc-weaknesses" rows="3"
+                                            placeholder="Known gaps or limitations of the competitor?"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="bc-objections">Common Objections</label>
-                                        <textarea id="bc-objections" rows="3" placeholder="What objections do sales teams face against this competitor?"></textarea>
+                                        <textarea id="bc-objections" rows="3"
+                                            placeholder="What objections do sales teams face against this competitor?"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-full">
                                         Generate Battle Card
@@ -681,14 +763,15 @@
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="output-panel">
                             <div class="panel-card output-card" id="battlecard-output">
                                 <div class="empty-state">
                                     <div class="empty-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-                                            <polyline points="14 2 14 8 20 8"/>
+                                            <path
+                                                d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                                            <polyline points="14 2 14 8 20 8" />
                                         </svg>
                                     </div>
                                     <h4>Ready for Battle</h4>
@@ -705,14 +788,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Win/Loss Analysis Page -->
                 <div class="page" id="page-win-loss">
                     <div class="page-header">
                         <h2>Win/Loss Analysis Engine</h2>
                         <p>Analyze deal patterns and generate actionable insights for your GTM strategy.</p>
                     </div>
-                    
+
                     <div class="content-grid">
                         <div class="input-panel">
                             <div class="panel-card">
@@ -720,7 +803,8 @@
                                 <form id="winloss-form" class="form">
                                     <div class="form-group">
                                         <label for="wl-deal">Deal/Opportunity Name</label>
-                                        <input type="text" id="wl-deal" placeholder="e.g., Acme Corp Enterprise Deal" required>
+                                        <input type="text" id="wl-deal" placeholder="e.g., Acme Corp Enterprise Deal"
+                                            required>
                                     </div>
                                     <div class="form-group">
                                         <label for="wl-outcome">Outcome</label>
@@ -732,7 +816,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="wl-competitor">Competitor (if applicable)</label>
-                                        <input type="text" id="wl-competitor" placeholder="Who did you compete against?">
+                                        <input type="text" id="wl-competitor"
+                                            placeholder="Who did you compete against?">
                                     </div>
                                     <div class="form-group">
                                         <label for="wl-reason">Primary Reason</label>
@@ -749,7 +834,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="wl-notes">Detailed Notes</label>
-                                        <textarea id="wl-notes" rows="4" placeholder="What happened? Key moments, objections, deciding factors..."></textarea>
+                                        <textarea id="wl-notes" rows="4"
+                                            placeholder="What happened? Key moments, objections, deciding factors..."></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-full">
                                         Analyze Deal
@@ -757,15 +843,15 @@
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="output-panel">
                             <div class="panel-card output-card" id="winloss-output">
                                 <div class="empty-state">
                                     <div class="empty-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <line x1="18" y1="20" x2="18" y2="10"/>
-                                            <line x1="12" y1="20" x2="12" y2="4"/>
-                                            <line x1="6" y1="20" x2="6" y2="14"/>
+                                            <line x1="18" y1="20" x2="18" y2="10" />
+                                            <line x1="12" y1="20" x2="12" y2="4" />
+                                            <line x1="6" y1="20" x2="6" y2="14" />
                                         </svg>
                                     </div>
                                     <h4>Ready to Analyze</h4>
@@ -781,14 +867,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- GTM Launch Page -->
                 <div class="page" id="page-gtm-launch">
                     <div class="page-header">
                         <h2>GTM Launch Planner</h2>
                         <p>Plan go-to-market strategies, launch sequences, and funnel messaging.</p>
                     </div>
-                    
+
                     <div class="content-grid single-column">
                         <div class="panel-card">
                             <h3 class="panel-title">Launch Configuration</h3>
@@ -796,7 +882,8 @@
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="gtm-product">Product/Feature Name</label>
-                                        <input type="text" id="gtm-product" placeholder="What are you launching?" required>
+                                        <input type="text" id="gtm-product" placeholder="What are you launching?"
+                                            required>
                                     </div>
                                     <div class="form-group">
                                         <label for="gtm-type">Launch Type</label>
@@ -825,7 +912,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="gtm-goals">Launch Goals</label>
-                                    <textarea id="gtm-goals" rows="3" placeholder="What does success look like? Key metrics?"></textarea>
+                                    <textarea id="gtm-goals" rows="3"
+                                        placeholder="What does success look like? Key metrics?"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="gtm-channels">Priority Channels</label>
@@ -861,12 +949,12 @@
                                 </button>
                             </form>
                         </div>
-                        
+
                         <div class="panel-card output-card" id="gtm-output">
                             <div class="empty-state">
                                 <div class="empty-icon">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                     </svg>
                                 </div>
                                 <h4>Ready to Launch</h4>
@@ -881,14 +969,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Market Segments Page -->
                 <div class="page" id="page-market-segments">
                     <div class="page-header">
                         <h2>Market Segmentation</h2>
                         <p>Define ICPs, buyer personas, and segment-specific narratives.</p>
                     </div>
-                    
+
                     <div class="content-grid">
                         <div class="input-panel">
                             <div class="panel-card">
@@ -900,7 +988,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="seg-industry">Target Industry</label>
-                                        <input type="text" id="seg-industry" placeholder="e.g., FinTech, Healthcare, SaaS">
+                                        <input type="text" id="seg-industry"
+                                            placeholder="e.g., FinTech, Healthcare, SaaS">
                                     </div>
                                     <div class="form-group">
                                         <label for="seg-size">Company Size</label>
@@ -917,7 +1006,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="seg-problem">Segment-Specific Pain</label>
-                                        <textarea id="seg-problem" rows="3" placeholder="What unique challenges does this segment face?"></textarea>
+                                        <textarea id="seg-problem" rows="3"
+                                            placeholder="What unique challenges does this segment face?"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-full">
                                         Build Segment Profile
@@ -925,16 +1015,16 @@
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="output-panel">
                             <div class="panel-card output-card" id="segment-output">
                                 <div class="empty-state">
                                     <div class="empty-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                            <circle cx="9" cy="7" r="4"/>
-                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                            <circle cx="9" cy="7" r="4" />
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                                         </svg>
                                     </div>
                                     <h4>Ready to Segment</h4>
@@ -950,14 +1040,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Roadmap Stories Page -->
                 <div class="page" id="page-roadmap-story">
                     <div class="page-header">
                         <h2>Roadmap Storytelling</h2>
                         <p>Transform technical roadmaps into compelling customer-facing narratives.</p>
                     </div>
-                    
+
                     <div class="content-grid">
                         <div class="input-panel">
                             <div class="panel-card">
@@ -965,7 +1055,8 @@
                                 <form id="roadmap-form" class="form">
                                     <div class="form-group">
                                         <label for="rm-feature">Feature/Initiative Name</label>
-                                        <input type="text" id="rm-feature" placeholder="e.g., AI-Powered Analytics" required>
+                                        <input type="text" id="rm-feature" placeholder="e.g., AI-Powered Analytics"
+                                            required>
                                     </div>
                                     <div class="form-group">
                                         <label for="rm-timeline">Expected Timeline</label>
@@ -973,7 +1064,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="rm-technical">Technical Details</label>
-                                        <textarea id="rm-technical" rows="4" placeholder="Describe the technical implementation, architecture changes, etc."></textarea>
+                                        <textarea id="rm-technical" rows="4"
+                                            placeholder="Describe the technical implementation, architecture changes, etc."></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="rm-audience">Story Audience</label>
@@ -990,14 +1082,14 @@
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="output-panel">
                             <div class="panel-card output-card" id="roadmap-output">
                                 <div class="empty-state">
                                     <div class="empty-icon">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                            <circle cx="12" cy="12" r="10"/>
-                                            <polyline points="12 6 12 12 16 14"/>
+                                            <circle cx="12" cy="12" r="10" />
+                                            <polyline points="12 6 12 12 16 14" />
                                         </svg>
                                     </div>
                                     <h4>Ready to Transform</h4>
@@ -1016,9 +1108,10 @@
             </div>
         </main>
     </div>
-    
+
     <!-- Scripts -->
     <script src="js/security.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
