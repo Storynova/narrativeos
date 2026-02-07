@@ -1,0 +1,168 @@
+# ===========================================
+# NarrativeOS™ Security-Hardened .gitignore
+# ===========================================
+
+# ============ SECRETS & CREDENTIALS ============
+# CRITICAL: Never commit secrets
+.env
+.env.*
+.env.local
+.env.*.local
+*.env
+env/
+envs/
+
+# API Keys and Tokens
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+
+# Secrets directories
+secrets/
+credentials/
+api-keys/
+keys/
+certs/
+certificates/
+private/
+.secrets/
+.credentials/
+
+# Auth files
+.htpasswd
+.htaccess
+auth.json
+oauth*.json
+service-account*.json
+firebase*.json
+google-credentials*.json
+aws-credentials*
+.aws/
+.gcp/
+
+# ============ SENSITIVE DATA ============
+# Config with potential secrets
+config.local.*
+config.private.*
+*.local.json
+*.private.json
+settings.json
+local.settings.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+dumps/
+backups/
+*.dump
+
+# ============ DEPENDENCIES ============
+node_modules/
+.pnpm-store/
+vendor/
+bower_components/
+jspm_packages/
+
+# ============ BUILD OUTPUTS ============
+dist/
+build/
+.next/
+out/
+.nuxt/
+.output/
+.svelte-kit/
+*.min.js
+*.min.css
+*.bundle.js
+*.bundle.css
+
+# ============ IDE & EDITORS ============
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.iml
+
+# ============ OS FILES ============
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============ LOGS & TEMP ============
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ============ TESTING ============
+coverage/
+.nyc_output/
+*.lcov
+.coverage
+htmlcov/
+
+# ============ CACHE ============
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# ============ RUNTIME DATA ============
+pids/
+*.pid
+*.seed
+*.pid.lock
+.node_repl_history
+
+# ============ MISC ============
+# Package lock files (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Documentation builds
+docs/_build/
+site/
+
+# User uploads (if applicable)
+uploads/
+media/
+static/uploads/
