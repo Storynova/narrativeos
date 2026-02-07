@@ -1,78 +1,107 @@
 # NarrativeOS™ — powered by StoryGTM
 
-> The operating system for product storytelling and go-to-market clarity.
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-blue.svg)](LICENSE)
+[![Security: Hardened](https://img.shields.io/badge/Security-Hardened-success.svg)](SECURITY.md)
+[![Powered by: StoryGTM](https://img.shields.io/badge/Powered%20by-StoryGTM-orange.svg)](https://github.com/Storynova)
 
-## Overview
+> **The Operating System for Product Storytelling and Go-To-Market Clarity.**
 
-NarrativeOS™ is an enterprise-grade Product Marketing SaaS platform that transforms complex products into compelling narratives. Powered by StoryGTM execution engine.
-
-## Core Modules
-
-### NarrativeOS Core
-- **Product Understanding Engine** - Value maps, JTBD analysis, feature-benefit translation
-- **Positioning & Differentiation Engine** - Positioning statements, competitive matrices
-- **Story Architecture Engine** - Product story frameworks and messaging hierarchies
-- **Creative Hooks Generator** - 3-5 narrative hooks per product with emotional/logical anchors
-
-### StoryGTM Modules
-- **StoryGTM Launch** - GTM planning, launch sequencing, funnel messaging
-- **StoryGTM Sales** - Battle cards, win/loss analysis, objection handling
-- **StoryGTM Market** - ICP segmentation, persona narratives
-- **StoryGTM Roadmap** - Technical roadmap → customer story translation
-
-## Quick Start
-
-```bash
-# Open the application
-open index.html
-
-# Or use a local server
-python3 -m http.server 8080
-```
-
-## Security
-
-This platform is built with security-first principles:
-- Input sanitization on all user inputs
-- No sensitive data stored in client-side code
-- Content Security Policy ready
-- OWASP guidelines followed
-
-See [SECURITY.md](./SECURITY.md) for full security documentation.
-
-## Project Structure
-
-```
-narrativeos/
-├── index.html          # Main application
-├── css/
-│   └── styles.css      # Design system
-├── js/
-│   ├── app.js          # Core application logic
-│   ├── modules/        # Feature modules
-│   └── security/       # Security utilities
-├── prompts/            # AI prompt configurations
-├── docs/               # Documentation
-└── .github/            # GitHub workflows
-```
-
-## GitHub Workflow
-
-```bash
-# Regular development commits
-git add .
-git commit -m "feat: [description]"
-git push origin main
-
-# For releases
-git tag -a v1.0.0 -m "Release v1.0.0"
-git push origin v1.0.0
-```
-
-## License
-
-Proprietary - All Rights Reserved
+NarrativeOS™ is an enterprise-grade platform designed to help product, marketing, and sales teams transform complex products into compelling narratives that win markets. Built with a security-first philosophy and a premium dark-mode aesthetic.
 
 ---
 
-**NarrativeOS™** | Turn complex products into stories that win markets.
+## ✨ Core Pillars
+
+### 🧠 Narrative Intelligence
+Extract the "why" behind your product. Convert technical features into customer-centric outcomes using Jobs-to-be-Done (JTBD) frameworks and value mapping.
+
+### 🚀 GTM Orchestration
+Plan launches from Alpha to GA with narrative-led sequencing. Ensure every channel—from website to social—speaks with one coherent voice.
+
+### ⚔️ Sales Enablement
+Equip sales teams with dynamic battle cards, win/loss pattern analysis, and objection handlers that focus on strategic differentiation.
+
+---
+
+## 🛠️ Platform Modules
+
+### NarrativeOS Core
+- **Product Understanding Engine**: Transform features into a Feature→Benefit→Outcome matrix.
+- **Positioning & Differentiation Engine**: Generate persona-specific positioning statements and competitive grids.
+- **Story Architecture Engine**: Frameworks for Origin, Transformation, and Vision stories.
+- **Creative Hooks Generator**: 5 levels of magnetic hooks (Emotional, Logical, Provocative, etc.).
+
+### StoryGTM Execution
+- **StoryGTM Launch**: Complete GTM planning and launch messaging hierarchies.
+- **StoryGTM Sales**: Battle cards, win/loss analysis, and executive talk tracks.
+- **StoryGTM Market**: ICP definition, buyer persona creation, and segment narratives.
+- **StoryGTM Roadmap**: Bridging the gap between technical progress and customer value stories.
+
+---
+
+## 🔒 Security & Trust
+
+NarrativeOS™ is built for the enterprise. We prioritize data protection and prompt security:
+- **Zero-Persistence PII**: Sensitive data stays in your browser session.
+- **Prompt Injection Defense**: Multi-layered regex and pattern detection for AI safety.
+- **Input Sanitization**: XSS and injection prevention on all form fields.
+- **Compliance Ready**: Architectural alignment with SOC-2 and ISO-27001 principles.
+
+---
+
+## 📂 Project Architecture
+
+```text
+narrativeos/
+├── index.html              # Main Application (Premium Vanilla JS/HTML5)
+├── README.md               # Project Overview
+├── SECURITY.md             # Detailed Security Policy
+├── .gitignore              # Security-Hardened exclusions
+│
+├── css/
+│   └── styles.css          # Design System (Glassmorphism + Dark Mode)
+│
+├── js/
+│   ├── app.js              # Application Controller & Logic
+│   └── security.js         # Security & Trust Layer Utilities
+│
+├── prompts/                # AI Prompt Engineering Hierarchy
+│   ├── narrativeos.system.md
+│   ├── storygtm.execution.md
+│   └── narrativeos.trustlayer.md
+│
+└── .github/
+    └── workflows/          # CI/CD and Security Scanning
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Any modern web browser (Edge, Chrome, Safari, Firefox).
+- No server-side setup required for the core UI (Vanilla JS).
+
+### Running Locally
+```bash
+# Clone the repository
+git clone https://github.com/Storynova/narrativeos.git
+
+# Navigate to the directory
+cd narrativeos
+
+# Open in browser
+open index.html
+```
+
+---
+
+## 🤝 Contribution & License
+
+**NarrativeOS™** is a proprietary platform. All rights reserved by **Storynova**.
+
+For collaboration inquiries or enterprise licensing, contact the [Storynova Team](https://github.com/Storynova).
+
+---
+
+**NarrativeOS™** | *Turn complex products into stories that win markets.*
