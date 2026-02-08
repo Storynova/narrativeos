@@ -110,6 +110,17 @@
             }
         });
 
+        // Handle data-navigate clicks (CSP compliance)
+        document.addEventListener('click', (e) => {
+            const navTrigger = e.target.closest('[data-navigate]');
+            if (navTrigger) {
+                const page = navTrigger.getAttribute('data-navigate');
+                if (page) {
+                    navigateTo(page);
+                }
+            }
+        });
+
         // Check initial hash
         const initialHash = window.location.hash.slice(1);
         if (initialHash) {
