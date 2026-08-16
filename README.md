@@ -38,7 +38,7 @@ Equip sales teams with dynamic battle cards, win/loss pattern analysis, and obje
 
 ---
 
-## 🛠️ Platform Modules
+## 🛠️ Create Platform Modules
 
 ### NarrativeOS Core
 - **Product Understanding Engine**: Transform features into a Feature→Benefit→Outcome matrix.
