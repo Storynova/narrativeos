@@ -26,6 +26,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/asset_library.css">
 </head>
 
 <body>
@@ -149,6 +150,14 @@
                             <polyline points="12 6 12 12 16 14" />
                         </svg>
                         <span>Roadmap Stories</span>
+                    </a>
+                    <a href="#asset-library" class="nav-item" data-page="asset-library">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16v4H4z" />
+                            <path d="M4 10h16v10H4z" />
+                            <line x1="8" y1="14" x2="16" y2="14" />
+                        </svg>
+                        <span>Asset Library</span>
                     </a>
                 </div>
             </nav>
@@ -1105,6 +1114,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- Asset Library (Phase 1 experimental) -->
+                <div class="page" id="page-asset-library">
+                    <div id="asset-library"></div>
+                </div>
             </div>
         </main>
     </div>
@@ -1112,6 +1125,7 @@
     <!-- Scripts -->
     <script src="js/security.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/asset_library.js"></script>
 </body>
 
 </html>
