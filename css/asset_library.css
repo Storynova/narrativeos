@@ -1,0 +1,191 @@
+/* ==========================================================================
+   NarrativeOS — Asset Library styles
+   Phase 1 — Experimental Prototype
+   Proprietary / All Rights Reserved — Copyright (c) 2026 Mahima Singh / StoryNova
+   ========================================================================== */
+
+#asset-library {
+  padding: 8px 0;
+}
+
+.al-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.al-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.al-header .al-sub {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.al-toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.al-filter {
+  background: #12121a;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  color: #f8fafc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.al-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.al-card {
+  background: rgba(26, 26, 36, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  transition: border-color .15s ease, transform .15s ease;
+}
+
+.al-card:hover {
+  border-color: #6366f1;
+  transform: translateY(-2px);
+}
+
+.al-card .al-type {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #a855f7;
+  background: rgba(99, 102, 241, .15);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+}
+
+.al-card .al-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f8fafc;
+  margin: 0 0 6px;
+}
+
+.al-card .al-meta {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.al-card .al-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.al-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.al-btn-view {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  color: #fff;
+}
+
+.al-btn-view:hover { filter: brightness(1.1); }
+
+.al-btn-del {
+  background: transparent;
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.al-btn-del:hover { background: rgba(239, 68, 68, .1); }
+
+.al-empty {
+  text-align: center;
+  padding: 48px 16px;
+  color: #64748b;
+  font-size: 14px;
+  border: 1px dashed rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+}
+
+.al-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.al-modal {
+  background: #12121a;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 14px;
+  width: min(720px, 92vw);
+  max-height: 84vh;
+  overflow: auto;
+  padding: 24px;
+}
+
+.al-modal h3 {
+  margin: 0 0 12px;
+  color: #f8fafc;
+}
+
+.al-modal pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.al-modal-close {
+  float: right;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Save-to-Library button injected on generator outputs */
+.al-save-btn {
+  margin-top: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  color: #fff;
+}
+
+.al-save-btn:hover { filter: brightness(1.1); }
+
+.al-save-btn.saved {
+  background: #10b981;
+  cursor: default;
+}
